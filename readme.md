@@ -27,7 +27,7 @@ https://nodejs.org/en/
 - Switch between different `db_environment` if necessary.
 - Run in dev mode using `yarn run dev`
 
-## Deploy for production,
+## Deploy for production
 ### On Windows:
 - Download `rimraf`(Replacement for rm- rd on windows):
     `npm install rimraf`
@@ -48,5 +48,13 @@ https://nodejs.org/en/
 ### For automated update process
 - Clone the repository to your server
 - Run `yarn build` to generate the build folder
+- (Optional) To change build folder location, 
+
+edit `package.json`,
+
+under `script` => `build-server`,
+
+change `./build` to your desired location 
+
 - Create a script to run `nodemon index.js` on OS startup
 - When you need to update the running NodeJS, just edit/pull updated files then run `yarn build` again, it will generate the build folder again, then nodemon will detect changes and restart NodeJS service automatically.
