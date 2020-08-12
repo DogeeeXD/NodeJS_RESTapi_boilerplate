@@ -1,16 +1,28 @@
-## To get started,
-- Download and install yarn if not installed yet:
-https://classic.yarnpkg.com/en/docs/install
+# NodeJS RESTapi Boilerplate
+This is a boilerplate code for creating a simple REST API with NodeJS.
+Some codes are written in ES6 and compiled to ES5 using babel.
 
-## To test
-- run `yarn install`
-- add your database in `src/config/config.json`
-- be sure to have `nodemon` installed: 
+## Features
+- REST API routing(Express)
+- Database connection (Sequelize)
+- User Authentication (PassportJS & JWT)
+- Password Encryption (BcryptJS)
+- Access level control
+- CORS
+- Basic logging (Morgan & rotating-file-stream)
 
+## To get started
+- Download and install NodeJS:
+https://nodejs.org/en/
+- Download and install yarn package manager using npm:
+`npm install -g yarn`
+- Download and install Nodemon using npm:
 `npm install nodemon -g`
 
-- yarn run dev
-- if you don't have `nodemon` installed, change your `dev` script in package.json to `node --exec babel-node src/index.js`
+## For development
+- run `yarn install`
+- add your database configuration in `src/config/config.json`
+- Run in dev mode using `yarn run dev`
 
 ## Deploy for production,
 ### On Windows:
