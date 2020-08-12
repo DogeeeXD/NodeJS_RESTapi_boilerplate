@@ -1,0 +1,40 @@
+{
+  "db_environment": "development",
+
+  "production": {
+    "username": "db_user",
+    "password": "db_user_password",
+    "database": "DB_Prod",
+    "host": "db.host.prod",
+    "port": "5555",
+    "dialect": "mssql",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "dialectOptions": {
+      "instanceName": "SQLEXPRESS",
+      "trustServerCertificate": "true"
+    }
+  },
+  "development": {
+    "username": "db_user",
+    "password": "db_user_password",
+    "database": "DB_Dev",
+    "host": "db.host.dev",
+    "port": "5555",
+    "dialect": "mssql",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "dialectOptions": {
+      "instanceName": "SQLEXPRESS",
+      "trustServerCertificate": "true"
+    }
+  }
+}
