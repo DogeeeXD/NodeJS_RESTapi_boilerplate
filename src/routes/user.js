@@ -12,7 +12,7 @@ module.exports = (app) => {
     allowOnly(config.accessLevels.admin, create)
   );
 
-  //testing raw query without role restrictions
+  // Get all username list
   app.get(
     '/api/users',
     allowOnly(config.accessLevels.admin, getAllUsers)
