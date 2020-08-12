@@ -13,13 +13,9 @@ Some codes are written in ES6 and compiled to ES5 using babel.
 - Basic logging (Morgan & rotating-file-stream)
 
 ## To get started
-- Download and install NodeJS:
-https://nodejs.org/en/
-- Download and install yarn package manager using npm:
-`npm install -g yarn`
-
-- Download and install Nodemon using npm:
-`npm install nodemon -g`
+- Download and install NodeJS: https://nodejs.org/en/
+- Download and install yarn package manager using npm: `npm install -g yarn`
+- Download and install Nodemon using npm: `npm install nodemon -g`
 
 ## For development
 - Run `yarn install`
